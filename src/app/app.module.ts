@@ -6,6 +6,9 @@ import { HomeIndexComponent } from './home/home-index/home-index.component';
 import { MyMusicIndexComponent } from './my-music/my-music-index/my-music-index.component';
 import { FriendIndexComponent } from './friend/friend-index/friend-index.component';
 
+import { FormsModule } from '@angular/forms'
+import { AppRoutingModule } from './app-routing.module'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +18,8 @@ import { FriendIndexComponent } from './friend/friend-index/friend-index.compone
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
