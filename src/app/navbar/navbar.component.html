@@ -1,0 +1,9 @@
+<ul class="navbar">
+  <li *ngFor="let navItem of navItems" [class.liHover]="navItem === selectNavItem" (click)="onSelectNavItem(navItem)" routerLink='{{navItem.url}}'>{{navItem.name}}
+    <span [class.cor]="navItem === selectNavItem"></span>
+  </li>
+  <li *ngIf='download' [class.liHover]="download === selectNavItem" (click)="onSelectNavItem(download)">{{download.name}}
+    <span [class.cor]="download === selectNavItem"></span>
+    <span class='hot'></span>
+  </li>
+</ul>

@@ -25,7 +25,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: HomeIndexComponent
+    redirectTo: 'home',
+    pathMatch: 'full'
   }
 ]
 

@@ -7,14 +7,16 @@ import { MyMusicIndexComponent } from './my-music/my-music-index/my-music-index.
 import { FriendIndexComponent } from './friend/friend-index/friend-index.component';
 
 import { FormsModule } from '@angular/forms'
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeIndexComponent,
     MyMusicIndexComponent,
-    FriendIndexComponent
+    FriendIndexComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

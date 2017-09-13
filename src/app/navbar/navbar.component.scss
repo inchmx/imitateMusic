@@ -1,0 +1,47 @@
+.navbar {
+  float: left;
+  width: 510px;
+  height: 68px;
+  color: #ccc;
+  margin: 0;
+  list-style-type: none;
+  li {
+    float: left;
+    line-height: 68px;
+    font-size: 14px;
+    padding: 0 19px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    .cor{
+      position: absolute;
+      z-index: 100;
+      bottom: 0;
+      left: 50%;
+      margin-left: -6px;
+      width: 12px;
+      height: 7px;
+      background: url('../../assets/images/topbar.png') -226px 0 no-repeat;
+    }
+  }
+  li:hover{
+    color: #fff;
+    background-color: #000;
+  }
+  .liHover{
+    color: #fff;
+    background-color: #000;
+  }
+  :nth-last-child(1){
+    position: relative;
+    .hot{
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      margin-top: -12px;
+      background: url('../../assets/images/topbar.png') -190px 0 no-repeat;
+      width: 28px;
+      height: 19px;
+    }
+   }
+ }
