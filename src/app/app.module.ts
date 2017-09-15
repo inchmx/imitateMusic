@@ -8,7 +8,8 @@ import { FriendIndexComponent } from './friend/friend-index/friend-index.compone
 
 import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
-import { NavbarComponent } from './navbar/navbar.component'
+import { MainNavbarComponent } from './navbar/main-navbar/main-navbar.component';
+import { SubNavbarComponent } from './navbar/sub-navbar/sub-navbar.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component'
     HomeIndexComponent,
     MyMusicIndexComponent,
     FriendIndexComponent,
-    NavbarComponent
+    MainNavbarComponent,
+    SubNavbarComponent
   ],
   imports: [
     BrowserModule,

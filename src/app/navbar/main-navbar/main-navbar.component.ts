@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarService } from './navbar.service'
+import { NavbarService } from '../navbar.service'
 
-import { NavItem } from './navbar'
+import { NavItem } from '../navbar'
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+  selector: 'app-main-navbar',
+  templateUrl: './main-navbar.component.html',
+  styleUrls: ['./main-navbar.component.scss'],
   providers: [
     NavbarService
   ]
 })
-
-export class NavbarComponent implements OnInit {
+export class MainNavbarComponent implements OnInit {
 
   constructor(private navbarservice: NavbarService) { }
+
 
   navItems: Array<NavItem>
   download: NavItem
@@ -37,4 +37,5 @@ export class NavbarComponent implements OnInit {
   onSelectNavItem(selectItem: NavItem): void {
     this.selectNavItem = selectItem
   }
+
 }
