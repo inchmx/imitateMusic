@@ -12,6 +12,9 @@ export class NavbarService {
   getInitNavItem(): Promise<NavItem> {
     return new Promise((resolve, reject): void => {
       const pathname = location.pathname.split('/')[1]
+      if (!pathname) {
+        resolve(NAVITEMS.find(f => f.url.split('/')[1] == 'home'))
+      }
       resolve(NAVITEMS.find(f => f.url.split('/')[1] == pathname))
     })
   }
